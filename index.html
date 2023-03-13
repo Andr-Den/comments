@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Комментарии</title>
+  </head>
+  <body>
+    <main class="page">
+      <div id="comments" class="comments-field">
+        <p class="default-text open">Здесь пока никто ничего не писал(</p>
+      </div>
+      <form class="comments__form">
+        <fieldset class="comments__container">
+          <span>Имя</span>
+          <input type="text" id="name" class="comment__name">
+          <span>Дата</span>
+          <input type="date" id="date" class="comment__name">
+          <span>Текст комментария</span>
+          <textarea type="text" id="description" class="comment__description"></textarea>
+          <input type="submit" value="Отправить" id="submit-button" class="submit-button">
+        </fieldset>
+      </form>
+    <template id="card">
+      <div class="card">
+        <p class="card__name"></p>
+        <p class="card__text"></p>
+        <div>
+          <p class="card__date"></p>
+          <button class="card__like" type="button" id="like-button"></button>
+        </div>
+    </div>
+    </template>
+  </main>
+    <script src="scripts.js"></script>
+  </body>
