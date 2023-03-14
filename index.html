@@ -15,22 +15,28 @@
         <fieldset class="comments__container">
           <span>Имя</span>
           <input type="text" id="name" class="comment__name">
+          <span class="error-name">Заполните поле</span>
           <span>Дата</span>
           <input type="date" id="date" class="comment__name">
           <span>Текст комментария</span>
-          <textarea type="text" id="description" class="comment__description"></textarea>
+          <input type="text" id="description" class="comment__description">
+          <span class="error-description">Заполните поле</span>
           <input type="submit" value="Отправить" id="submit-button" class="submit-button">
         </fieldset>
       </form>
     <template id="card">
-      <div class="card">
-        <p class="card__name"></p>
-        <p class="card__text"></p>
-        <div>
-          <p class="card__date"></p>
-          <button class="card__like" type="button" id="like-button"></button>
+        <div class="card">
+          <div class="basket-cap">
+          <img src="./images/cap.svg" class="basket">
+          <img src="./images/basket.svg" class="basket">
+          </div>
+          <p class="card__name"></p>
+          <p class="card__text"></p>
+          <div>
+            <p class="card__date"></p>
+            <button class="card__like" type="button" id="like-button"></button>
+          </div>
         </div>
-    </div>
     </template>
   </main>
     <script src="scripts.js"></script>
